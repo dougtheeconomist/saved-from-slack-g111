@@ -5,6 +5,7 @@ from fuzzywuzzy import process
 from multiprocessing import Pool, cpu_count
 #Nik and Darrel's code for translating movie titles that were ALMOST right
 
+#Here's what we used to get about 3440-ish of the movies to match
 #Used One Powerful AWS computer with 8 processors and took 10-ish minutes. (C52X Large)
 pd.options.display.max_columns = None
 trainingdf = pd.read_csv('data/training.csv')
